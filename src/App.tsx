@@ -1,12 +1,15 @@
-import Gender from "./components/Gender";
+import { Buttons } from "./components/Buttons";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { MainImage } from "./components/MainImage";
 
 function App() {
   return (
-    <main>
-      <section className="flex gap-5 bg-red-500">
-        <Gender gender="male" />
-        <Gender gender="female" />
-      </section>
+    <main className="pt-2 px-3 flex flex-col mih-h-dvh gap-2">
+      <MainImage />
+      <Header />
+      <Buttons />
+      <Footer />
     </main>
   );
 }
